@@ -3,7 +3,7 @@ const express = require('express')
 const server = express()
 
 server.get('/', (req, res)=>{
-    res.send("Hola Mundo")
+    res.send("Hola Mundo con express")
 })
 
 server.get('/clientes', (req,res)=>{

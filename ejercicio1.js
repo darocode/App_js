@@ -1,3 +1,5 @@
+//Exportaciones de modulos y funciones
+
 const sumar=(n1, n2)=>{
 //    const n1=20, n2=40;
 
