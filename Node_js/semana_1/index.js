@@ -31,16 +31,45 @@ op.restar(10,7)
 op.multiplicar(10,2)
 op.diividir(10,5)*/
 
+////////////////////////////////////////////////////////////////// EXPRESS JS ///////////////////////////////////////////////////////////
 
-const express = require('express')
+const express = require('express');
 const app = express();
 const port = 3007
 
+app.use(express.static(__dirname + '/public'))
+
+app.set('view engine', 'ejs');
+app.set('views',__dirname + '/views')
+
+
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
-  res.send('hello world')
+    res.render('index',{titulo:"Pagina Home con render"})
 })
 
 app.listen(port, ()=>{
     console.log(`Ejemplo del servidor en el puerto ${port}`)
 })
+
+app.get('/clientes', (req, res) => {
+    res.send(`Hola Daniel`)
+  })
+
+app.delete('/clientes', (req, res) => {
+    res.send('Got a DELETE request at /cliente')
+  });
+
+
+app.use((req, res, next)=>{
+    res.status(404).sendFile(__dirname + '/public/404.html')
+})
+
+
+app.get('/productos', (req, res) => {
+    res.render('productos',{titulo:"Pagina Home con render",descripcion:"producto1 "})
+})
+
+
+
+
