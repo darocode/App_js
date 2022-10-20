@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "node": "^18.10.0"
-  },
-  "scripts": {
-    "start": "node ejercicio1.js"
-  }
-}
