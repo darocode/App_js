@@ -48,6 +48,18 @@ app.get('/', (req, res) => {
     res.render('index',{titulo:"Pagina Home con render"})
 })
 
+app.get('/producto', (req, res) => {
+    res.render('productos',{titulo:"Pagina Home con render",descripcion:"producto1 "})
+})
+
+app.get('/cvDaniel', (req, res) => {
+    res.render('cv',{titulo:"Pagina Home con render",descripcion:"producto1 "})
+})
+
+
+
+
+
 app.listen(port, ()=>{
     console.log(`Ejemplo del servidor en el puerto ${port}`)
 })
@@ -66,9 +78,6 @@ app.use((req, res, next)=>{
 })
 
 
-app.get('/productos', (req, res) => {
-    res.render('productos',{titulo:"Pagina Home con render",descripcion:"producto1 "})
-})
 
 
 
