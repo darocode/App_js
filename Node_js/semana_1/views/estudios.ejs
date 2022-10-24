@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        
+        <%- include('templates/navbar');%>
 
 
         <div class="perfil__container">
@@ -24,43 +24,35 @@
                 </ul>
             </div>
         </div>
-
-        <section>
-            <div class="about-me">
-                <h1>Bachilletarto</h1>
-                <p>
-                    Colegio General Santander
-                </p>
-            </div>
-        </section>
-        <section>
-            <div class="about-me">
-                <h1>Tecnico</h1>
-                <p>
-                    Tecnico en programacion de software
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <div class="about-me">
-                <h1>Tecnologo</h1>
-                <p>
-                   Tecnologo en analisis y desarrollo de sistemas de informacion
-                </p>
-            </div>
-        </section>
-
-        <div class="menu__container">
-            <div class="menu__icons">
-                <ul>
-                    <li ><a href="/cvDaniel">Acerca de Mi</a></li>
-                    <li class="active"><a href="/estudios">Estudios</a></li>
-                    <li><a href="/habilidades">Habilidades</a></li>
-                    <li><a href="">Experiencia</a></li>
-                </ul>
-            </div>
+        <div class="container__about">
+            <section>
+                <div class="about-me">
+                    <h1>Bachilletarto</h1>
+                    <p>
+                        Colegio General Santander
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="about-me">
+                    <h1>Tecnico</h1>
+                    <p>
+                        Tecnico en programacion de software -SENA
+                    </p>
+                </div>
+            </section>
+    
+            <section>
+                <div class="about-me">
+                    <h1>Tecnologo</h1>
+                    <p>
+                       Tecnologo en analisis y desarrollo de sistemas de informacion -SENA
+                    </p>
+                </div>
+            </section>
         </div>
+        
+        <%- include('templates/footer');%>
 
         
     </div>

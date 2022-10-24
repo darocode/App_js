@@ -42,27 +42,8 @@ app.use(express.static(__dirname + '/public'))
 app.set('view engine', 'ejs');
 app.set('views',__dirname + '/views')
 
-
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', (req, res) => {
-    res.render('index',{titulo:"Pagina Home con render"})
-})
-
-app.get('/producto', (req, res) => {
-    res.render('productos',{titulo:"Pagina Home con render",descripcion:"producto1 "})
-})
-
-app.get('/cvDaniel', (req, res) => {
-    res.render('cv',{titulo:"Pagina Home con render",descripcion:"producto1 "})
-})
-
-app.get('/estudios', (req, res) => {
-    res.render('estudios',{titulo:"Pagina Home con render",descripcion:"producto1 "})
-})
-
-app.get('/habilidades', (req, res) => {
-    res.render('habilidades',{titulo:"Pagina Home con render",descripcion:"producto1 "})
-})
+//Rutas WEB
+app.use('/', require('./router/RutasWeb'));
 
 
 

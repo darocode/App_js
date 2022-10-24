@@ -8,9 +8,11 @@
     <title>Curriculum Vitae</title>
     
 </head>
+
 <body>
+    
     <div class="container">
-        
+        <%- include('templates/navbar');%>
 
 
         <div class="perfil__container">
@@ -22,39 +24,39 @@
                     
                     <li><span>Celular:</span> 3502868941 </li>
                     <li><span>Direccion:</span> cll78 #2323123 </li>
-                    <li><span>Correo:</span> daniel@gmail.com </li>
-                    <li><span>Pais Origen:</span> Mozambique </li>
-                    <li><span>Edad:</span> 98 </li>
+                    <li><span>Correo:</span> dangelsfocus@gmail.com </li>
+                    <li><span>Pais Origen:</span> Colombia </li>
+                    <li><span>Edad:</span> 17 </li>
                 </ul>
             </div>
         </div>
 
         
-
-
+    <div class="container__about">
         <section>
             <div class="about-me">
                 <h1>Acerca de mi...</h1>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur 
-                    adipisicing elit. Eaque, illum voluptatibus 
-                    incidunt dicta nihil modi inventore ipsum, 
-                    nostrum a rem voluptate quod doloribus id adipisci, vel eius neque nesciunt dolor?
+                    Joven Programador, me gusta estudiar y aprender nuevas cosas.
+                    Amante de la tecnologia y el codigo
                 </p>
             </div>
         </section>
 
-        <div class="menu__container">
-            <div class="menu__icons">
-                <ul>
-                    <li class="active"><a href="/cvDaniel">Acerca de Mi</a></li>
-                    <li><a href="/estudios">Estudios</a></li>
-                    <li><a href="/habilidades">Habilidades</a></li>
-                    <li><a href="">Experiencia</a></li>
-                </ul>
-            </div>
-        </div>
 
+        <section>
+            <div class="about-me">
+                <h1>Portafolio</h1>
+                <a href="https://github.com/darocode">Github</a>
+                <a href="https://github.com/darocode">Drive</a>
+                
+            </div>
+        </section>
+
+    </div>
+
+    <%- include('templates/footer');%>
+       
         
     </div>
 
