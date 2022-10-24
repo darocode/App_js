@@ -56,6 +56,14 @@ app.get('/cvDaniel', (req, res) => {
     res.render('cv',{titulo:"Pagina Home con render",descripcion:"producto1 "})
 })
 
+app.get('/estudios', (req, res) => {
+    res.render('estudios',{titulo:"Pagina Home con render",descripcion:"producto1 "})
+})
+
+app.get('/habilidades', (req, res) => {
+    res.render('habilidades',{titulo:"Pagina Home con render",descripcion:"producto1 "})
+})
+
 
 
 
